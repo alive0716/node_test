@@ -1,0 +1,21 @@
+$pmwidth39:39px;
+$pmwidth31:31px;
+$pwidth20:20px;
+$marbottom:10px;
+$bgcolor:#da4136;
+$fontsize18:1.8rem;
+$fontsize14:1.4rem;
+$fontsize15:1.5rem;
+$fontsize21:2.1rem;
+
+$green:rgb(154,204,48);
+$red:rgb(248,62,70);
+$shadowcolor:rgb(178,29,33);
+$orange:rgb(255,123,60);
+$purple:rgb(118,87,181);
+@mixin rounded($radius:5px){
+	-webkit-border-radius: $radius;
+}
+@mixin mb($bottom:20px){
+	margin-bottom: $bottom;
+}

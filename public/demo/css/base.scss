@@ -1,0 +1,258 @@
+@import 'variable.scss';
+@import 'common.scss';
+.bgcomm{
+	background-image: url(../img/indexbg.jpg);
+	background-repeat: repeat-y;
+	background-size:100%;
+}
+.kbg{
+	background:url('../img/arrow.png') -10000px  -100000px  no-repeat;
+}
+.active{
+	@extend .bgcomm;
+	width: 100%;
+	margin: 0 auto;
+}
+.top img{
+	width:100%;
+}
+.con-mid{
+	margin:0 $pmwidth39;
+}
+.con-mid-cbtn{
+	height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: blod;
+    @include rounded($radius:3px);
+}
+.con-mid-a{
+	@extend .con-mid-cbtn;
+	width: 100%;
+    background-color: $red;
+    box-shadow: 1px 1.732px 1px 0px $shadowcolor;
+    height: 44px;
+    line-height: 44px;
+    font-size: $fontsize18;
+    margin-bottom: $marbottom;
+    padding: 0 $pwidth20;
+    position: relative;
+}
+.con-mid-a span {
+	font-size:$fontsize15;
+}
+.con-mid-a i{
+	font-style: italic;
+} 
+
+.tel-get{
+	@extend .con-mid-cbtn;
+	height:44px;
+	line-height:44px;
+	padding:0 16px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: $green;
+}
+.con-method{
+	padding:0 $pmwidth31;
+	margin-top: 8px;
+	height:36px;
+}
+.mar-right{
+	margin-right: 2%;
+}
+.active-btn{
+	@include rounded($radius:3px);
+	background-color:$orange;
+	height:36px;
+	line-height:36px;
+	width:48%;
+	color:#fff;
+	text-align: center;
+	display:inline-block;
+	font-size:$fontsize14;
+}
+.icon{
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	margin-left: 5px;
+	display:inline-block;
+}
+.arrowup{
+	background-image:url(../img/arrow.png);
+	width:10px;
+	height:11px;
+	background-position: 0px 0;
+	@extend .icon;
+}
+.down{
+	-webkit-transform:rotate(180deg);
+}
+.arrowshare{
+	background-image:url(../img/share.png);
+	width:17px;
+	height:16px;
+	@extend .icon;
+}
+.active-detail{
+	height:300px;
+	background-color:$orange;
+}
+/*弹层*/
+.overlay-alert{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+	position:absolute;
+	left: 0;
+	top:0;
+	z-index: 3000;
+}
+.bgcolor{
+	background-image:-webkit-linear-gradient(to right,#f83340,#f42a35,#f83340);
+	background-image:linear-gradient(to right,#f83340,#f42a35,#f83340)
+}
+.modal{
+	@extend .bgcolor;
+	@include rounded(5px);
+	position:absolute;
+	margin:0 auto;
+	width: 314px;
+	height:370px;
+	top:50%;
+	left:50%;
+	margin-top:-185px;
+	margin-left:-157px;
+}
+.orangebg{
+	background-image:url(../img/popbg.png);
+	background-size:289px;
+	background-repeat:no-repeat;
+	background-position: top center;
+}
+.orangeH{
+	height:330px;
+}
+.modal-hd{
+	width: 193px;
+	margin:0 auto;
+	padding-top: 58px;
+	line-height:28px;
+	color:#fff;
+	font-size:$fontsize18;
+}
+.modal-tip{
+	padding-top: 109px;
+	width:262px;
+	font-size:$fontsize18;
+	color:#fff;
+	margin: 0 auto;
+	line-height: 28px;
+}
+.modal-hd strong{
+	font-weight:blod;
+}
+.modal-form{
+	width: 241px;
+	margin:0 auto;
+}
+.popfont{
+	color:#fff;
+	height:25px;
+	line-height:25px;
+	font-size: $fontsize15;
+}
+.verify-box{
+	width:100%;
+	@include rounded(3px);
+	background-color:rgba(255,255,255,0.2);
+	height:35px;
+	line-height:25px;
+	padding:5px 10px;
+	position:relative;
+	margin:10px auto;
+}
+.phone-error{
+	@extend .popfont;
+	position: absolute;
+	left: 10px;
+	top:0px;
+	width:221px;
+	height:35px;
+	padding: 5px 0px;
+	display: none;
+}
+.phone-error-tel{
+	width:221px;
+}
+.phone-error-v{
+	width:121px;
+}
+.phone-error span{
+	width: 18px;
+	height:18px;
+	background-color:$orange;
+	color:#fff;
+	@include rounded(50%);
+	display: inline-block;
+	line-height:18px;
+	text-align:center;
+	margin-right: 5px;
+}
+
+.modal-phone{
+	@extend .popfont;
+	background-color:transparent;
+	width:221px;
+	//display:none
+}
+.btn-verify{
+	@extend .kbg;
+	@extend .popfont;
+	padding:5px 15px;
+	position:absolute;
+	background-color: $orange;
+	right:0px;
+	top:0px;
+	height:35px;
+	-webkit-border-radius: 0 3px 3px 0px;
+}
+.btn-submit {
+	font-size:$fontsize21;
+	text-align:center;
+	color: #fff;
+	height:45px;
+	line-height: 45px;
+	width:151px;
+	display:block;
+	@include rounded(3px);
+	background-color:$purple;
+	margin:20px auto;
+}
+.phone-close{
+	width: 45px;
+	height:45px;
+	position:absolute;
+	top:15px;
+	right:15px;	
+}
+.phone-close:before{
+	content: '';
+	width:12px;
+	height:12px;
+	position: absolute;
+	background-image:url(../img/close.png);
+	background-repeat: no-repeat;
+	top:0px;
+	right: 0px;
+	background-size:100% 100%;
+	background-color:#000;
+}
+.modal-verify{
+	@extend .popfont;
+	background:transparent;
+	width:110px;
+}

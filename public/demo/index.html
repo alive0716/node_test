@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="baidu-tc-cerfication" content="026d803a63acedbb48a092297f730c8b" />
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <title></title>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+        <meta name="applicable-device" content="mobile"/>
+        <title>active</title>
+        <link rel="stylesheet" href="css/base.css"/>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/popUp.js"></script>
+        <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="APPID" data-redirecturi="REDIRECTURI" charset="utf-8"></script>
+        <span id="qq_login_btn"></span>
+        <script type="text/javascript">
+            QC.Login({//按默认样式插入QQ登录按钮
+                btnId:"qq_login_btn"	//插入按钮的节点id
+            });
+        </script>
+    </head>
+    <body>
+        <div class="active">
+            <div class="top">
+                <img src="img/img_02.jpg" alt="">
+            </div>
+            <div class="con-mid">
+                <div class="con-mid-a">
+                    注册手机号码：
+                    <span class="content-tel">13913913913</span>
+                </div>
+                <div class="con-mid-a">
+                    您已赚取：
+                    <i>900</i>元手机话费
+                </div>
+                <div class="con-mid-a">
+                    未充值：
+                    <i>0</i>元
+                    <a class='tel-get' id='getCalls'  href="javascript:void(0);">马上领取</a>
+                </div>
+            </div>
+            <div class="con-method clear">
+                <a id="ruleBtn" href="javascript:void(0);" class="active-btn mar-right fl">
+                    活动玩法<i class="arrowup down"></i>
+                </a>
+                <a id="activeShare" href="javascript:void(0);" class="active-btn fr">
+                    分享赚话费<i class="arrowshare"></i>
+                </a>
+            </div>
+            <div class="active-detail" id="activeDatail">
+                <ul class="active-play">
+                    <li class="first">
+                        推荐新用户下载安居客APP最新版；<br/>
+                        <span>请注意“新用户”必须是首次下载打开安居客APP的用户哦；<br/>
+                            用户可去应用商店搜索下载，如APP Store、安卓市场、豌豆荚、百度手机助手等；
+                        </span>
+                    </li>
+                    <div class='active-play-img'><img src="img/simg1.png"></div>
+                    <li class="second">
+                        用户打开安居客APP，在微聊频道中，向“安居客团队”账号提交您的手机号（格式为#135 xxxxxxxx）
+                    </li>
+                    <div class="active-play-img"><img src="img/simg2.png"></div>
+                    <li class="third"> 
+                    用户提交成功后，您可立即赢取3元手机话费，同时用户会默认关注您，您最新的房源自动出现他的安居客APP上；
+                    </li>
+                </ul>
+                <ol class="active-rule">
+                    <strong>活动规则</strong>
+                    <li>活动时间：2015年1月15日-2015年1月21日；</li>
+                    <li>您每成功推荐1位新用户使用安居客APP即可免费赢
+                          取3元手机话费，活动期间共计100万元手机话费免
+                          费赠送，先到先得；</li>
+                    <li>每位新用户提交只能提交1位经纪人的注册手机号码，
+                      多次提交视作无效；</li>
+                    <li>您当日领取的话费将于次个工作日内充值到填写的手
+                      机号码，请耐心等待；</li>
+                    <li>活动期间，如您存在违规行为，将取消您的中奖资格，
+                          因刷机、越狱、丢失、作弊等行为造成奖品无法领取，
+                          由用户自行承担；</li>
+                    <li>活动组委会联系方式：021-61821155-8571
+                        （周一至周五 9:00--18:00）；</li>
+                        <li>活动最终解释权归安居客集团所有。</li>
+                </ol>
+            </div>  
+        </div>
+        <!-- 手机验证start -->
+    <div class="overlay-alert" id='overlayMask' style="display:none">
+     </div>
+        <section class="modal" id="overlay-login" style="display:none">
+            <div class="orangebg">
+                <div class="modal-hd">
+                <strong>亲</strong>请填写需要充值的手机号码，此号码仅作为<span>领奖</span>号码!
+                </div>
+                <div class="modal-form">
+                    <div class="verify-box clear">
+                        <input class="modal-phone" required name="modal-phone" value="请输入手机号码" type="text" id="modal-phone">
+                        <div class="phone-error phone-error-tel" id="phone-error"><span>i</span>手机号码不正确请重新输入</div>
+                    </div>
+                    <div class="verify-box clear">
+                        <input class="modal-verify" required name="modal-verify" value="验证码" type="text" id="modal-verify" >
+                        <input class="btn-verify" id="btn-verify" type="button" value="获取验证码">
+                        <div class="phone-error phone-error-v" id="verify-error"></div>
+                    </div>
+                    <input class="btn-submit " id="btn-submit" type="submit" value="提交">
+
+                </div>
+            </div>
+            <div class="phone-close" id="phone-close"></div>
+        </section>
+   
+    <!-- 手机验证end -->
+        <!-- 提示 -->
+        <section class="modal" id="overlay-tip" style="display:none">
+            <div class="orangebg">
+                <div class="modal-tip">
+                    亲，目前没有话费可以领取哦！ 快去推荐用户使用安居客APP 赚话费吧！
+                </div>
+                <a class="btn-submit" id='winCall'>继续赚话费</a>
+            </div>
+            <div class="phone-close" id="tip-close"></div>
+        </section>
+    <!--提示 -->
+            <!-- 分享 -->
+        <section class="modal share_contain" id="overlay-share" style="display:none">
+            <div class="orangebg sharebg">
+                <div class="title">分享到</div>
+    <div class="m-share">
+        <a class="jiathis_button_qzone" data-soj="qq" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+        <a class="jiathis_button_qzone nobg" data-soj="qq" title="分享到QQ空间"><span class="jiathis_txt jiathis_separator jtico jtico_qzone">QQ空间</span></a>
+    </div>
+    <div class="m-share">
+        <a class="jiathis_button_tsina" data-soj="xlwb" title="分享到新浪微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+        <a class="jiathis_button_tsina nobg" data-soj="xlwb" title="分享到新浪微博"><span class="jiathis_txt jiathis_separator jtico jtico_tsina">新浪微博</span></a>
+    </div>
+    <div class="m-share">
+        <a class="jiathis_button_tqq" data-soj="txwb" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+        <a class="jiathis_button_tqq nobg" data-soj="txwb" title="分享到腾讯微博"><span class="jiathis_txt jiathis_separator jtico jtico_tqq">腾讯微博</span></a>
+    </div>
+            </div>
+            <div class="phone-close" id="shareClose" id="tip-close"></div>
+        </section>
+    <!--分享 -->
+    </body>
+</html>

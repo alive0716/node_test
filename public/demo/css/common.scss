@@ -1,0 +1,69 @@
+html {
+	font-size: 62.5%;
+	height: 10%;
+	background-color: $bgcolor;
+}
+body {
+	font-family: 'arial';
+	-webkit-user-select : none;
+	-webkit-text-size-adjust:none;
+	-webkit-overflow-scrolling: touch;
+	font-size: 62.5%;
+	font-family: "微软雅黑",Arial,verdana, Helvetica, sans-serif;
+}
+ul{
+	list-style: none;
+}
+i,em,var{
+	font-style: normal;
+}
+body,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,p,form,input,textarea,button {
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+ol{
+	margin: 0;
+}
+img,fieldset {
+	border: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+input, img {
+	vertical-align:middle;
+}
+a:link,a:visited{
+	text-decoration: none;
+}
+/*元素被点击的时候产生的背景颜色（各个浏览器有默认颜色）*/
+a, li, input, button, section, span, div {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	-o-tap-highlight-color: rgba(0,0,0,0);
+	-ms-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+::-webkit-input-placeholder{
+	color:#e69b96;
+	font:normal 11px/16px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*reset.css end*/
+
